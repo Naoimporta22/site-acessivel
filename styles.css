@@ -3,6 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -61,9 +64,7 @@ section {
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
@@ -135,14 +136,15 @@ h2 {
     border: none;
     font-weight: bold;
 }
+
 .form-control {
     background-color: #F1EDEF;
 }
 .menu-acessibilidade{
-   position: fixed;
-   top:2rem;
-   right:20px;
-   z-index: 1000;
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
 }
 
 .rotacao-botao{
@@ -151,7 +153,7 @@ h2 {
 }
 
 .opcoes-acessibilidade{
-    margin-top: 10px;
+    margin-top:10px;
     display: flex;
     flex-direction: column;
 }
@@ -163,33 +165,36 @@ h2 {
     display: none;
 }
 
-/* Alto Constrate */
 .alto-contraste{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto)
-}
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto)
-}
-
-.alto-contraste .nav-link{
-    color: var(--alto-contraste-link)
-}
-
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario botton,
-.alto-contraste .btn-primary{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
-.alto-contraste #tropicalia{
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
     background: none;
 }
 
-.alto-contraste #fundo-galeria{
-    background-color: none;
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
 }
