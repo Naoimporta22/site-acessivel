@@ -3,7 +3,7 @@
    Formação de um site usando recursos de acessibilidade, com a linguagem html, css e JS.
    ## Recursos de Acessibilidade
    - Atributos Aria
-    Ajuda a idetificar e descrever elementos da página
+    Ajuda a identificar e descrever elementos da página
    - Alt
     Permite que o conteúdo seja descrito para pessoas com deficiência visual
    - Tab-index
